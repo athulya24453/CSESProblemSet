@@ -1,8 +1,13 @@
 n = int(input())
+a = n // 5
 
-t = 0
+c = 0
 
-for i in range(len(str(n))):
-    t+=n//5**(i+1)
+while n>10:
+    n = n//25
+    c += n
 
-print(t)
+ans = a+c
+
+
+print(ans)
